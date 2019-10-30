@@ -59,10 +59,26 @@ for (var i = 0; i < classroom.length; i++) {
   }
 }
 
+//stampa es 2 migliorato
+console.log('---- ES 2 Migliorato ----')
+for (var j = 0; j < classroom.length; j++) {
+  console.log('Nome studente: ',  classroom[j].name);
+  console.log('Cognome studente: ',  classroom[j].surname);
+}
+
+
+
 //Terza Parte Esercizio
+console.log('---- ES 3 ----')
 var inputName = prompt('Inserisci il tuo nome');
 var inputSurname = prompt('Inserisci il tuo cognome');
-var inputAge = parseInt(prompt('Inserisci la tua età'));
+var inputAge;
+
+do {
+  inputAge = parseInt(prompt('Inserisci la tua età'));
+} while (isNaN(inputAge));
+
+
 
 var newStudent = {};
 newStudent.name = inputName;

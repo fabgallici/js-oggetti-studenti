@@ -55,3 +55,18 @@ for (var i = 0; i < classroom.length; i++) {
     console.log('Dato studente: ' + prop + "  Valore contenuto: " + classroom[i][prop]);
   }
 }
+
+//Terza Parte Esercizio
+var inputName = prompt('Inserisci il tuo nome');
+var inputSurname = prompt('Inserisci il tuo cognome');
+var inputAge = parseInt(prompt('Inserisci la tua età'));
+
+var newStudent = {};
+newStudent.name = inputName;
+newStudent.surname = inputSurname;
+newStudent.age = inputAge;
+
+console.log('new object student ', newStudent);
+
+classroom.push(newStudent);
+console.log('classrom obj updated ', classroom);

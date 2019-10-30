@@ -72,13 +72,10 @@ for (var j = 0; j < classroom.length; j++) {
 console.log('---- ES 3 ----')
 var inputName = prompt('Inserisci il tuo nome');
 var inputSurname = prompt('Inserisci il tuo cognome');
-var inputAge;
 
-do {
-  inputAge = parseInt(prompt('Inserisci la tua età'));
-} while (isNaN(inputAge));
-
-
+while (isNaN(inputAge)) {
+  var inputAge = parseInt(prompt('Inserisci la tua età'));
+}
 
 var newStudent = {};
 newStudent.name = inputName;

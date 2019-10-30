@@ -52,7 +52,10 @@ var classroom = [
 for (var i = 0; i < classroom.length; i++) {
   console.log('Dati studente in posizione ' + i);
   for (var prop in classroom[i]) {
-    console.log('Dato studente: ' + prop + "  Valore contenuto: " + classroom[i][prop]);
+    if (prop === "name" || prop === "surname") {
+      console.log('Dato studente: ' + prop + "  Valore contenuto: " + classroom[i][prop]);
+    }
+    
   }
 }
 
@@ -66,7 +69,7 @@ newStudent.name = inputName;
 newStudent.surname = inputSurname;
 newStudent.age = inputAge;
 
-console.log('new object student ', newStudent);
+console.log('new student object ', newStudent);
 
 classroom.push(newStudent);
 console.log('classrom obj updated ', classroom);

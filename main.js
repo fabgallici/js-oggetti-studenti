@@ -21,6 +21,7 @@ for (var prop in student) {
 
 //Seconda Parte Esercizio
 console.log('--- Inizio Esercizio 2 ---');
+// oggetti va bene anonimi visto che sono comunque raggiungibili dall'indice di classe
 var classroom = [
   {
     "name": 'Marco',
@@ -49,6 +50,7 @@ var classroom = [
   }
 ];
 
+//utile se devo stampare proprietà degli oggetti entro certe condizioni o valori
 for (var i = 0; i < classroom.length; i++) {
   console.log('Dati studente in posizione ' + i);
   for (var prop in classroom[i]) {
@@ -59,7 +61,7 @@ for (var i = 0; i < classroom.length; i++) {
   }
 }
 
-//stampa es 2 migliorato
+//stampa es 2 altra versione
 console.log('---- ES 2 Migliorato ----')
 for (var j = 0; j < classroom.length; j++) {
   console.log('Nome studente: ',  classroom[j].name);
